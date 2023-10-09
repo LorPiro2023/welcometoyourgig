@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+<style>
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+
+
+.axis--x .tick:last-of-type text {
+  visibility: hidden;
+}
+
+
+</style>
+<body>
+  <svg id="grafico" height="500"></svg>
+</body>
+<script src='https://d3js.org/d3.v4.min.js'></script>
+<script>
+
+window.onresize = function() {
+  var anchura = window.innerWidth;
+  var lineas = document.body.innerHTML = '<svg id="grafico" height="500"></svg>';
+  document.getElementById("grafico").setAttribute("width", anchura);
+  grafico();
+};
+
+function grafico(){
+var anchura = window.innerWidth;
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 60, bottom: 30, left: 20},
+    width = anchura - margin.left - margin.right,
+    height = svg.attr("height") - margin.top - margin.bottom,
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var parseTime = d3.timeParse("%Y");
+
+var x = d3.scaleTime().range([0, width]),
+    y = d3.scaleLinear().range([height, 0]),
+    z = d3.scaleOrdinal().range(["rgb(49, 148, 206)",  "rgb(132, 132, 132)",  "rgb(255, 127, 0)", "rgb(76, 123, 179)", "rgb(255, 183, 112)", "rgb(56, 56, 56)", "rgb(0, 37, 92)"]);
+
+
+
+var line = d3.line()
+    .curve(d3.curveStepAfter)
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.employment); });
+
+
+
+d3.tsv("data-LGMRW.tsv", type, function(error, data) {
+  if (error) throw error;
+
+  var countries = data.columns.slice(1).map(function(id) {
+    return {
+      id: id,
+      values: data.map(function(d) {
+        return {date: d.date, employment: d[id]};
+      })
+    };
+  });
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+  y.domain([
+    d3.min(countries, function(c) { return 0}),
+    d3.max(countries, function(c) { return 30})
+  ]);
+
+  z.domain(countries.map(function(c) { return c.id; }));
+
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y));
+
+  d3.selectAll('.axis--y .tick line').attr('x2', width).attr('stroke', 'rgba(0,0,0, .15)').attr('stroke-dasharray', '10,2');
+  d3.selectAll('.axis--y .tick:first-of-type line').attr('x2', width).attr('stroke', '#000000').attr('stroke-dasharray', '0,0');
+
+
+
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+      .style("text-anchor", "end")
+      .attr('dx', width/55)
+      .attr('y', width/22)
+        .attr("transform", "rotate(-60)");
+        d3.selectAll('.axis--x .tick line').attr('y2', height).attr('stroke', 'rgba(0,0,0, .15)').attr('stroke-dasharray', '10,2').attr("transform", "translate(0," + -height + ")");
+        d3.selectAll('.axis--x .tick:first-of-type line').attr('y2', height).attr('stroke', '#000000').attr('stroke-dasharray', '0,0');
+
+
+  var country = g.selectAll(".country")
+    .data(countries)
+    .enter().append("g")
+      .attr("class", "country");
+
+  country.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      .style("stroke", function(d) { return z(d.id); });
+
+
+
+//tooltips
+var mouseG = svg.append("g")
+  .attr("class", "mouse-over-effects");
+
+mouseG.append("path") // this is the black vertical line to follow mouse
+  .attr("class", "mouse-line")
+  .style("stroke", "#555555")
+  .style("stroke-width", "1px")
+  .style("opacity", "0");
+
+var lines = document.getElementsByClassName('line');
+
+var mousePerLine = mouseG.selectAll('.mouse-per-line')
+  .data(countries)
+  .enter()
+  .append("g")
+  .attr("class", "mouse-per-line");
+
+mousePerLine.append("circle")
+  .attr("r", 5)
+  .style("stroke", function(d) { return z(d.id); })
+  .style("fill", "none")
+  .style("stroke-width", "1px")
+  .style("opacity", "0");
+
+
+mousePerLine.append("text")
+  .attr("transform", "translate(10,3)")
+  .style("stroke", "rgba(0,0,0,.3)")
+  .style('fill', function(d) { return z(d.id); })
+  .style("stroke-width", "1px")
+  .style('font-size',  '18px');
+
+mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
+  .attr('width', width) // can't catch mouse events on a g element
+  .attr('height', height)
+
+
+  .attr('fill', 'none')
+  .attr('pointer-events', 'all')
+  .on('mouseout', function() { // on mouse out hide line, circles and text
+    d3.select(".mouse-line")
+      .style("opacity", "0");
+    d3.selectAll(".mouse-per-line circle")
+      .style("opacity", "0");
+    d3.selectAll(".mouse-per-line text")
+      .style("opacity", "0");
+  })
+  .on('mouseover', function() { // on mouse in show line, circles and text
+    d3.select(".mouse-line")
+      .style("opacity", "1");
+    d3.selectAll(".mouse-per-line circle")
+      .style("opacity", "1");
+    d3.selectAll(".mouse-per-line text")
+      .style("opacity", "1");
+  })
+  .on('mousemove', function() { // mouse moving over canvas
+    var mouse = d3.mouse(this);
+    d3.select(".mouse-line")
+      .attr("d", function() {
+        var d = "M" + ((mouse[0]) + 20) + "," + ((height) + 20);
+        d += " " + ((mouse[0]) + 20) + "," + 20;
+        return d;
+      });
+
+    var ypos = [];
+
+    d3.selectAll(".mouse-per-line")
+      .attr("transform", function(d, i) {
+        var xDate = x.invert(mouse[0]),
+            bisect = d3.bisector(function(d) { return d.date; }).right;
+            idx = bisect(d.values, xDate);
+
+        var beginning = 0,
+            end = lines[i].getTotalLength(),
+            target = null;
+
+        while (true){
+          target = Math.floor((beginning + end) / 2);
+          pos = lines[i].getPointAtLength(target);
+          if ((target === end || target === beginning) && pos.x !== mouse[0]) {
+              break;
+          }
+          if (pos.x > mouse[0])      end = target;
+          else if (pos.x < mouse[0]) beginning = target;
+          else break; //position found
+        }
+
+        d3.select(this).select('text')
+          .text(y.invert(pos.y).toFixed(2));
+
+          ypos.push ({ind: i, y: pos.y, off: 0});
+
+        return "translate(" + ((mouse[0])+20) + "," + ((pos.y)+20) +")";
+      })
+      .call(function(sel) {
+        ypos.sort (function(a,b) { return a.y - b.y; });
+        ypos.forEach (function(p,i) {
+          if (i > 0) {
+            var last = ypos[i-1].y;
+             ypos[i].off = Math.max (0, (last + 22) - ypos[i].y);
+            ypos[i].y += ypos[i].off;
+          }
+        })
+        ypos.sort (function(a,b) { return a.ind - b.ind; });
+      })
+      .select("text")
+
+        .attr("transform", function(d,i) {
+          return "translate (10,"+(-8+ypos[i].off)+")";
+        });
+      });
+
+  });
+
+  function type(d, _, columns) {
+    d.date = parseTime(d.date);
+    for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
+    return d;
+  }
+
+}//fin grafico
+
+var anchura = window.innerWidth;
+var lineas = document.body.innerHTML = '<svg id="grafico" height="500"></svg>';
+document.getElementById("grafico").setAttribute("width", anchura);
+grafico();
+</script>

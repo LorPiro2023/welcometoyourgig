@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Welcome To Your Gig - Gig economy all'italiana</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/gigeconomy.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  </head>
+  <body>
+    <div class="negro"></div>
+    <div class="negrotooltip"></div>
+    <button class="subir">
+      <div class="subirflecha"></div>
+      <div class="subirflecha2"></div>
+    </button>
+    <nav>
+      <button class="desplegableint activar">Menu</button>
+      <div class="nombreint">Gig economy all’Italiana</div>
+      <div class="ocultarnav">
+        <a href="index.html">
+          <div class="regresar">
+            <img src="images/logohome.png"></img>
+          <!--<p>Gig economy all'italiana</p>-->
+          </div>
+        </a>
+        <ul>
+          <a href="#" onclick="return false;" onmousedown="$('#menufranjaclick02, #menufranjaclick03, #menufranjaclick04, #menufranjaclick05').removeClass('activo'); $('#menufranjaclick01').addClass('activo'); autoScrollTo('altra01obj');">
+            <li id="menufranjaclick01" style="width: 20%;">
+              Gigger italiani
+            </li>
+          </a>
+          <a href="#" onclick="return false;" onmousedown="$('#menufranjaclick01, #menufranjaclick03, #menufranjaclick04, #menufranjaclick05').removeClass('activo'); $('#menufranjaclick02').addClass('activo'); autoScrollTo('altra02obj');">
+            <li id="menufranjaclick02" style="width: 20%;">
+              I dati dell’INPS
+            </li>
+          </a>
+          <a href="#" onclick="return false;" onmousedown="$('#menufranjaclick02, #menufranjaclick01, #menufranjaclick04, #menufranjaclick05').removeClass('activo'); $('#menufranjaclick03').addClass('activo'); autoScrollTo('altra03obj');">
+            <li id="menufranjaclick03" style="width: 20%;">
+              I Turchi meccanici
+            </li>
+          </a>
+          <a href="#" onclick="return false;" onmousedown="$('#menufranjaclick02, #menufranjaclick03, #menufranjaclick01, #menufranjaclick05').removeClass('activo'); $('#menufranjaclick04').addClass('activo'); autoScrollTo('altra04obj');">
+            <li id="menufranjaclick04" style="width: 20%;">
+              Jobby
+            </li>
+          </a>
+          <a href="#" onclick="return false;" onmousedown="$('#menufranjaclick02, #menufranjaclick03, #menufranjaclick04, #menufranjaclick01').removeClass('activo'); $('#menufranjaclick05').addClass('activo'); autoScrollTo('altra05obj');">
+            <li id="menufranjaclick05" style="width: 20%;">
+              Nuove regole
+            </li>
+          </a>
+
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="headerfoto" id="articuloter">
+        <h1>Gig economy all'italiana</h1>
+        <h2>Come cambia il lavoro tra reviews, algoritmi e tariffe delle piattaforme</h2>
+      </div>
+    </header>
+    <article>
+      <div class="textonormal">
+        <h1 id="altra01obj">Giggers</h1>
+        <p>
+          «All’inizio della mia attività da freelancer, cinque anni fa, usavo spesso la piattaforma Upwork. Poi col tempo mi sono allontanata sempre di più e presto spero di poterne fare a meno».
+        </p>
+      </div>
+        <div class="desplegableboton activar"><h2>Francesca, artista su Upwork</h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">
+        <p>
+          Troviamo Francesca De Vivo sul suo luogo di lavoro, una pagina web con una lista infinita di nomi, professioni, tariffe orarie e stelline. Tra i risultati filtrati in base al Paese da dove si opera c’era anche lei, “illustratrice, designer e game artist” di Roma. Nel suo profilo Upwork c’è scritto tutto: in cinque anni più di 90mila euro ricevuti grazie a 63 lavori, molti dei quali per committenti diversi. A prima vista una miniera d’oro, come qualcuno degli intervistati ha definito piattaforme di questo tipo. Non per Francesca.
+        </p>
+        <p>
+          «Le commissioni richieste dal sito sono aumentate considerevolmente e la stragrande maggioranza dei lavori offerti sulla piattaforma è di scarsa qualità: per un cliente con un progetto valido e disposto a pagare le tariffe che richiedo, ne trovo centinaia alla sola ricerca di manovalanza a basso costo». Così adesso Francesca lavora con alcuni dei clienti incontrati prima senza però l’intermediazione di Upwork.
+        </p>
+        </div>
+      </div>
+      <div class="textonormal">
+        <div style="margin-top: 20px;" class="flourish-embed" data-src="visualisation/84661"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+      <div class="textopie">
+        <p>
+          <i>Ogni cerchio del grafico è un profilo attivo Upwork con location “Italia”. I valori visualizzati sono i soldi guadagnati complessivamente tramite la piattaforma e il prezzo orario fissato da ogni utente.</i>
+        </p>
+      </div>
+      <div class="textonormal">
+        <p>
+          A Padova c’è un’altra Francesca illustratrice, ma a differenza della prima entusiasta di come l’approdo online abbia cambiato la sua vita. Con la sorella Michela disegnano per clienti da tutto il mondo, entrambe come libere professioniste. <b>Come altri intervistati racconta che all’inizio la difficoltà maggiore è stata emergere dalla massa di lavoratori disponibili e far sì che l’algoritmo spinga il proprio profilo sempre un po’ più in alto nei risultati.</b></p> 
+          <p>
+            </div>
+        <div class="desplegableboton activar"><h2>La miniera d'oro di Francesca</h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">
+          <p>
+            <b>Più si lavora, più si guadagna, più feedback si ricevono, più si alza il punteggio e migliora il posizionamento nei risultati, condizione fondamentale per ricevere proposte di lavoro dai committenti. Così all’inizio è normale proporre tariffe ‘sottocosto’ per crearsi un nome e iniziare a raccogliere clienti.</b></p>        
+        <p>
+          Lavorando principalmente con aziende estere - da alcuni anni è regolarmente impegnata nell’illustrare libri scolastici cinesi - Francesca conosce anche il metodo del <i>Work Diary</i>, applicato soprattutto nel caso di contratti orari (e non di progetti a tariffa fissa).
+        </p>
+        <p>
+          Si tratta di <b>uno strumento di registrazione delle ore effettivamente lavorate che permette ai clienti di monitorare e conteggiare il lavoro tramite screenshot (fotografie dello schermo del PC) eseguiti ogni dato periodo di tempo (solitamente inferiore a un’ora).</b>
+        </p>
+      </div>
+        <div class="textonormalvid">
+        <div class="embebido">
+          <iframe src="https://www.youtube.com/embed/mSDncfQSpro?rel=0&amp;showinfo=0;color=white" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="textopie">
+        <p>
+          <i>Francesca Da Sacco è un’illustratrice e vive a Padova, da cui lavora principalmente tramite la piattaforma Upwork.</i>
+        </p>
+      </div> 
+      </div> 
+  </div>
+      <div class="textonormal">
+                    </div>
+        <div class="desplegableboton activar"><h2>Conosci le piattaforme gig</h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">
+        <p>
+          Alla costante crescita di utenti-lavoratori non è corrisposta da parte delle maggiori piattaforme del settore la creazione di una struttura organizzativa stabile in Italia. Di conseguenza, le informazioni fornite circa i volumi d’affari e le caratteristiche dei loro utenti (sia freelancer che committenti) risultano minime. Dopo aver inutilmente interpellato gli uffici stampa di alcune di esse per ottenere una serie di informazioni, l’unica soluzione rimasta è stata ‘grattare’ dati dai profili degli iscritti, che sono pubblici.
+        </p>
+        <p>
+          Secondo Freelancer.com - una tra le maggiori piattaforme a livello mondiale - sarebbero circa 200.000 gli utenti registrati dall’Italia, la maggior parte dei quali lavorerebbe per imprese o privati italiani (le piattaforme gestiscono le transazioni e offrono assistenza burocratica ma spesso le fatture sono intestate direttamente alle imprese committenti). In realtà, scaricando e analizzando i dati dei singoli profili la situazione appare parecchio ridimensionata, dove solo un centinaio di ‘italiani’ può vantare più di una ‘review’ (un feedback dal committente) mentre tutti gli altri risulterebbero sostanzialmente inattivi. Così anche su Upwork, dove a fronte di più di dodicimila iscritti dall’Italia, i lavoratori che dimostrano di aver svolto più di un’ora di <i>task</i> risultano essere meno di seicento.
+        </p>
+        <p>
+          Tra tutti gli utenti attivi sulle piattaforme della <i>gig economy</i>, quelli che offrono servizi di traduzione e mediazione linguistica sembrano rappresentare di gran lunga la maggioranza degli ‘italiani’. È il caso di Caterina Piagentini, 25 anni, che da Pisa lavora come traduttrice e mediatrice linguistica, ciò per cui ha studiato tre anni a Londra. Almeno l’80% del suo reddito proviene da lavori trovati sulle piattaforme. Lei usa soprattutto <i>People per hour</i> (letteralmente ‘persone all’ora’) anche se tutto è iniziato con Fiverr, popolare piattaforma che prende il nome dai <i>gig</i> (lavoretti, termine registrato dalla stessa Fiverr) da 5 dollari pubblicati sulle sue pagine.
+        </p>
+      </div>
+      <div class="textonormalvid">
+        <div class="embebido">
+          <iframe src="https://www.youtube.com/embed/NN1WuCuSU78?rel=0&amp;showinfo=0;color=white" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="textopie">
+        <p>
+          <i>Caterina Piagentini, 25 anni, lavora da Pisa come traduttrice e mediatrice linguistica.</i>
+        </p>
+      </div>
+      <div class="textonormal">
+        <p>
+          Il caso di Caterina è emblematico di come nella gig economy il confine tra vita sociale e lavoro venga reso più labile rispetto alle professioni a cui siamo abituati; un po’ perché si possono organizzare i ritmi di lavoro secondo le proprie necessità, un po’ perché spesso la casa si converte in luogo di lavoro e la ricerca stessa di lavori diventa di per sé parte integrante della professione . Una ricerca che non sempre va a buon fine e che rappresenta una delle principali preoccupazioni per quelli che come Caterina si affidano esclusivamente a questo tipo di lavori. Così la <b>discontinuità di entrate</b> rimane uno dei maggiori problemi, comune a tutti coloro che non riescono a costruirsi una rete di clienti abituali (sulle piattaforme come in una normale carriera da freelancer).
+        </p>
+        <p>
+          Per ovviare alle difficoltà di accesso ai lavori e ai task pubblicati sui propri siti, le piattaforme hanno sviluppato un sistema per cui un utente può proporsi a un committente in cerca di lavoratori solo attraverso l’utilizzo di ‘gettoni’. Upwork li chiama “Connects” e ne fornisce alcuni gratis ogni mese a ciascun freelancer, permettendo così di inviare ai committenti le proprie candidature ai progetti proposti.
+        </p>
+        <p>
+          <b>Ogni candidatura ha un costo in termini di gettoni che, una volta terminati, dovranno essere acquistati dal freelancer. Chi può pagare ha così maggiori possibilità di proporsi ai committenti, ma non solo</b>. Nei gruppi facebook e nei forum online specializzati esiste un vero e proprio ‘mercato’ delle reviews grazie al quale <b>per pochi euro un utente può raccogliere feedback molto positivi che miglioreranno il suo posizionamento nelle pagine</b>.
+        </p>
+      </div>
+      </div>
+</div>
+      <div class="textobloque">
+        <h1 id="altra02obj">L’altra faccia della gig economy - I dati dell’INPS</h1>
+        <p>
+          Caterina, Francesca e i loro ‘colleghi’ rappresentano l’altra faccia della gig economy, probabilmente la più numerosa e meno conosciuta: il <span class="tooltip"><i>crowdworking</i></span><span class="textotooltip">I crowdworker sono lavoratori che incontrano i propri committenti (imprese o privati) su piattafome online. I committenti possono rivolgersi al singolo utente o alla 'folla', da cui poi verranno selezionati coloro che si aggiudicheranno il lavoro. Un sistema che annulla l'intermediazione vecchio stampo e amplia l'offerta di lavoro a livello globale.</span>, letteralmente ‘lavoro nella folla’.
+        </p>    
+        <p>
+          Secondo l’INPS, che ha dedicato un capitolo del rapporto 2018 alla “frontiera del lavoro autonomo”, dei 750mila italiani che sarebbero coinvolti nella gig economy, due terzi apporterebbero esclusivamente la forza lavoro (lavorando quindi senza adoperare la bicicletta, per esempio, o senza affittare immobili sulle piattaforme). Proprio come coloro che abbiamo intervistato.
+        </p>
+        <p>
+          Di questa quota marginale di lavoratori (il 2% della popolazione italiana in età attiva, sempre secondo l’INPS) si sa molto poco, anche perché la tracciabilità delle operazioni sulle piattaforme è molto parziale e le modalità di ingaggio e intermediazione della manodopera numerose e quasi sconosciute. A differenza delle imprese di consegna a domicilio e di Airbnb, le varie piattaforme di crowdworking non hanno infatti alcun riferimento organizzativo nel nostro paese e ciò rappresenta un evidente ostacolo a qualsiasi tentativo di approfondire l’adeguatezza dei rapporti di lavoro instaurati.
+        </p>
+      </div>
+      </div>
+      <div class="textobloquevid">
+        <div class="embebido">
+          <iframe src="https://www.youtube.com/embed/EvdgaAu20uM?rel=0&amp;showinfo=0;color=white" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="textopie">
+        <p>
+          Paolo Naticchioni è tra gli autori dello studio pubblicato dall’INPS. Oltre a collaborare con l’Istituto è professore associato di Economia politica presso l’Università Roma Tre.
+        </p>
+      </div>
+      <div class="textonormal">
+  <h3>Il caso italiano</h3>
+        <p>
+           Un tasso di disoccupazione tra i più alti dell’UE unito ad una percentuale di lavoratori autonomi molto sopra la media europea rende l’Italia un paese potenzialmente perfetto per il proliferare di questo genere di lavori.
+        </p>
+              </div>
+        <div class="desplegableboton activar"><h2>Guarda i grafici</h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">   
+        <p>
+         Negli Stati Uniti, dove nascono e crescono la maggior parte delle piattaforme di crowdworking e dell’economia on-demand, prima del 2027 queste potrebbero arrivare a coinvolgere quasi un lavoratore su tre, secondo lo <a href="http://www.inthecrowd.org/2016/11/17/spike-in-online-gig-work-flash-in-the-pan-or-future-of-employment/" target="_blank">studio</a> dei ricercatori Siddharth Suri and Mary L. Gray del Microsoft Research. In ”<a href="https://ec.europa.eu/transparency/regdoc/rep/1/2016/IT/1-2016-356-IT-F1-1.PDF" target="_blank">agenda europea per l’economia collaborativa</a>” la Commissione Europea stima che in futuro il settore “potrebbe apportare all’economia dell’UE da 160 a 572 miliardi di euro di ulteriore giro d’affari” (includendo però nel calcolo piattaforme del cosiddetto asset rental come Airbnb).
+        </p>
+        <h3>Tasso percentuale di lavoratori autonomi sul totale degli occupati</h3>
+
+              <div class="leyendad3">
+                <div class="leyendad3cont">
+
+                  <div class="leyendad3cuadrado" style="background-color: rgb(255, 127, 0)"></div>
+                  <p>Italia</p>
+                </div>
+                <div class="leyendad3cont">
+                  <div class="leyendad3cuadrado" style="background-color: rgb(76, 123, 179)"></div>
+                  <p>Spagna</p>
+                </div>
+                <div class="leyendad3cont">
+                  <div class="leyendad3cuadrado" style="background-color: rgb(0, 37, 92)"></div>
+                  <p>UE28</p>
+                </div>
+                <div class="leyendad3cont">
+                  <div class="leyendad3cuadrado" style="background-color: rgb(255, 183, 112)"></div>
+                  <p>Regno Unito</p>
+                </div>
+                <div class="leyendad3cont">
+                  <div class="leyendad3cuadrado" style="background-color: rgb(49, 148, 206)"></div>
+                  <p>Francia</p>
+                </div>
+                <div class="leyendad3cont">
+                  <div class="leyendad3cuadrado" style="background-color: rgb(132, 132, 132)"></div>
+                  <p>Germania</p>
+                </div>
+                <div class="leyendad3cont">
+                  <div class="leyendad3cuadrado" style="background-color: rgb(56, 56, 56)"></div>
+                  <p>USA</p>
+                </div>
+              </div>
+
+        <iframe src="charts/line-chart.html" frameborder="0" style="width: 100%; height: 510px;"></iframe>
+
+      </div>
+      <div class="textopie">
+        <p>
+          Fonte: OCSE - OECD (2018), Self-employment rate (indicator). doi: 10.1787/fb58715e-en
+        </p>
+      </div>
+      <div class="textonormal">
+        <p>
+          Nonostante il potenziale giro d’affari e le numerose opportunità di business nel settore, la precedente analisi dei profili Upwork e i dati dell’INPS fotografano una tendenza alquanto chiara. Coloro che svolgono attività nella gig economy dichiarano infatti di ricevere redditi complessivi mediamente al di sotto dei lavoratori dipendenti e degli altri lavoratori autonomi. Questo può indicare che una parte importante tra coloro che lavorano nella <i>gig economy</i> lo farebbe per ‘arrivare alla fine del mese’ e non solamente per ‘arrotondare’ o ricevere un reddito aggiuntivo.
+        </p>
+        <h3>Redditi annuali individuali complessivi</h3>
+        <iframe id="datawrapper-chart-4BZCF" src="https://datawrapper.dwcdn.net/4BZCF/3/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="336"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["4BZCF"]={},window.datawrapper["4BZCF"].embedDeltas={"100":533,"200":422,"300":379,"400":336,"500":336,"700":319,"800":319,"900":319,"1000":319},window.datawrapper["4BZCF"].iframe=document.getElementById("datawrapper-chart-4BZCF"),window.datawrapper["4BZCF"].iframe.style.height=window.datawrapper["4BZCF"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["4BZCF"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("4BZCF"==b)window.datawrapper["4BZCF"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+
+        <h3>Redditi annuali familiari complessivi</h3>
+        <iframe id="datawrapper-chart-SnLBa" src="https://datawrapper.dwcdn.net/SnLBa/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="286"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["SnLBa"]={},window.datawrapper["SnLBa"].embedDeltas={"100":367,"200":340,"300":313,"400":286,"500":286,"700":286,"800":286,"900":286,"1000":286},window.datawrapper["SnLBa"].iframe=document.getElementById("datawrapper-chart-SnLBa"),window.datawrapper["SnLBa"].iframe.style.height=window.datawrapper["SnLBa"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["SnLBa"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("SnLBa"==b)window.datawrapper["SnLBa"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+      </div>
+      <div class="textopie">
+        <p>
+          <i>Fonte: INPS, XVII RAPPORTO ANNUALE. Si noti che tra i dipendenti e autonomi non sono inclusi coloro che hanno un secondo lavoro come gig, per non sovrapporre i gruppi. I risultati non cambiano in modo rilevante includendoli. Analogamente, si considerano solo i lavoratori gig coloro che lo svolgono come unico lavoro.</i>
+        </p>
+      </div>
+      <div class="textonormal">
+        <p>
+          Nonostante il rapporto INPS rappresenti un contributo nuovo e necessario nel processo di studio ed emersione del fenomeno dei <i>gig worker</i>, in Italia il dibattito pubblico e politico è fermo alle condizioni di lavoro dei ciclofattorini, ignorando sostanzialmente tutte le altre componenti maggioritarie della gig economy, caratterizzate spesso da tipologie contrattuali atipiche e forme di pagamento alternative che non garantiscono nessun tipo di tutela, contribuzione sociale o tassazione.
+        </p>
+      </div>
+  </div>
+      <div class="textonormal">
+        <h1 id="altra03obj">I “Turchi meccanici” di Amazon in Italia</h1>
+        <p>
+          «Ho iniziato perché avevo bisogno di guadagnare qualcosa subito, anche poco. Altri lavori e piattaforme hanno processi di selezione, tempi di attesa... Amazon Mechanical Turk è stata per me un’opportunità immediata». Carlo ha 44 anni e vuole che di lui si sappia solo che saltuariamente fa l’informatico, con lunghe settimane di inattività totale.
+        </p>
+              </div>
+        <div class="desplegableboton activar"><h2>Scopri i lavori a 1 centesimo</h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">
+        <p>
+          «Nei periodi peggiori uso uno <span class="tooltip">script</span><span class="textotooltip">Una sequenza di istruzioni che analizza tutti i task proposti e li seleziona in base alle preferenze dell'utente.</span> che seleziona le HIT per me, quelle da almeno un dollaro. Poi mi ci metto due, tre ore massimo al giorno. Cerco di fare <span class="tooltip">HIT</span><span class="textotooltip">"Human Intelligence Tasks", i mini-compiti assegnati agli utenti di AMT.</span> da almeno 7 o 8 dollari lordi l’ora ma la concorrenza è durissima».
+        </p>
+        <p>
+          Carlo può essere definito un “Turker” italiano di Amazon Mechanical Turk, la piattaforma di <span class="tooltip">crowdsourcing</span><span class="textotooltip">Raccolta di dati per la realizzazione di un prodotto o di un progetto.</span> targata Amazon dove aziende e programmatori informatici da tutto il mondo raccolgono grandi moli di dati su compiti che i computer attualmente non sono in grado di portare a termine: taggare alcune foto, ricopiare manualmente i dati di documenti scannerizzati, eseguire <span class="tooltip">microtask</span><span class="textotooltip">Compiti, spesso descritti e pubblicati in lingua inglese, per cui non sono richieste particolari competenze né conoscenze.</span> entro i tempi indicati.
+        </p>
+        <p>
+          <b>I “requester” - coloro che hanno bisogno dei dati - fissano liberamente un corrispettivo per ogni attività richiesta, a partire da 1 centesimo di dollaro, e si riservano la possibilità di rifiutare (e quindi non pagare) i lavori giudicati sotto gli standard richiesti. Amazon, che su ogni pagamento si trattiene una commissione del 20% (nel 2015 era la metà) si limita a richiedere di ‘considerare il tempo che il lavoratore occuperà per eseguire il compito’</b>.
+        </p>
+        <p>
+          «Non lo considero un lavoro ma una non-soluzione per ‘disperati’, una specie di palliativo», racconta Carlo.
+        </p>
+        <p>
+          Negli Stati Uniti un numero crescente di persone si rivolge a piattaforme come AMT per ottenere la maggior parte delle sue entrate, come descrive il recente articolo <a href="https://www.theatlantic.com/business/archive/2018/01/amazon-mechanical-turk/551192/" target="_blank">The Internet Is Enabling a New Kind of Poorly Paid Hell</a> pubblicato sulla rivista statunitense <i>The Atlantic</i>. Una <a href="https://arxiv.org/ftp/arxiv/papers/1712/1712.05796.pdf" target="_blank">ricerca universitaria</a> sui guadagni tramite AMT ha analizzato 3,8 milioni di <i>task</i> eseguiti da 2.700 lavoratori, rilevando una paga oraria media di circa 2 dollari l’ora e che nel 96% si trova sotto il salario minimo statunitense. Nessun contratto, nessun monitoraggio.
+        </p>
+        <p>
+          In Italia la situazione è molto diversa, soprattutto perché al momento Amazon paga i “Turker” italiani solo tramite buoni acquisto Amazon.com. Non esiste una stima di quanti siano: Amazon non ha voluto fornirci questi dati e tramite la nostra HIT sulla piattaforma ne abbiamo individuati venti in pochi giorni. Monica (nome di fantasia come da lei richiesto) è una di loro. Ha una cinquantina d’anni, come il marito. Entrambi disoccupati dopo la chiusura della loro attività un paio d’anni fa, si sono iscritti ad AMT alla ricerca di un lavoro per arrotondare «quel misero stipendio che riusciamo a mettere insieme ogni mese». «In genere ricopio scontrini, fatture o dati dei pozzi petroliferi. Qualche volta lavoro con foto e sondaggi. Due, tre ore alla sera, raramente ci dedico più tempo».
+        </p>
+        <p>
+          Alcuni mesi fa <b>Amazon ha annunciato con un’e-mail di aver selezionato 20 turker italiani che, invitati a non divulgare la notizia, riceveranno i soldi guadagnati direttamente sul conto corrente. Un programma in fase di prova che è il probabile preludio a una definitiva affermazione di AMT in Italia</b>.
+        </p>
+      </div>
+            <div class="textopie">
+        <p>
+          Anche Lorenzo Angaran (34 anni) e Marco Viel (31) sono due informatici bellunesi iscritti e attivi - saltuariamente - su Amazon Mechanical Turk. Da tempo si domandano a cosa porterà questo tipo di ‘lavori’ e se quello rappresentato da AMT possa essere uno dei futuri possibili del lavoro.
+        </p>
+      </div>
+      <div class="textonormalvid">
+        <div class="embebido">
+          <iframe src="https://www.youtube.com/embed/jm8vksLiHsM?rel=0&amp;showinfo=0;color=white" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
+      <div class="textobloque">
+        <h1 id="altra04obj">Jobby, la TaskRabbit italiana</h1>
+        <p>
+          La gig economy in Italia è attualmente appannaggio di imprese estere che solo in alcuni casi scelgono di stabilirsi con una sede nel nostro paese. Non mancano però esperimenti nostrani che tentano di fare business nell’attraente settore dei <span class="tooltip"><i>job on call</i></span><span class="textotooltip">Lavoro a chiamata. Prestazioni di carattere discontinuo o intermittente, ovvero per periodi predeterminati nell'arco della settimana, del mese o dell'anno. (Fonte: INPS.it).</span> tipici delle economia on-demand. 
+            </div>
+<div class="desplegableboton activar"><h2>Conosci Jobby e i <i>workers</i></h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">    
+          <p>
+          Supermercato24, impresa veronese che si occupa di consegnare la spesa a domicilio, è uno degli esperimenti 'italiani' di gig economy. I suoi ‘shopper’ (i fattorini) sono ‘ingaggiati’ direttamente dai clienti e S24 si limita a gestire l’incontro tra i due, come viene sottolineato più volte durante il processo di candidatura e sul suo sito web: “Lo Shopper è indipendente e non intrattiene alcun rapporto di lavoro con Supermercato24, senza alcun vincolo di subordinazione nei confronti del medesimo”. Con il risultato di avere una schiera di lavoratori ultra-flessibili e disponibili senza tutele né assicurazione e con un costo del lavoro bassissimo.
+        </p>
+        <p>
+          Un business reso possibile anche da un finanziamento proveniente dalla Cassa depositi e prestiti (controllata dal Ministero dell’Economia e delle Finanze) attraverso un investimento nel fondo FII Tech Growth, che a sua volta nel giugno 2018 ha investito 8 milioni in S24, come raccontato da <a href="https://www.ilpost.it/2018/07/13/supermercato24-gig-economy/" target="_blank">Il Post</a>.
+        </p>
+        <p>
+          È nata a Milano invece Jobby, “il lavoro quando ti serve”, un’app sulla falsariga della statunitense <span class="tooltip">TaskRabbit</span><span class="textotooltip">Popolare startup di San Francisco che mette in contatto i privati con alcuni lavoratori freelance che si offrono di eseguire numerosi lavoretti (dal montaggio dei mobili alla pulizia della casa).</span> dove privati e aziende postano qualsiasi tipo di lavoretto, indicando tempi e compenso (orario o forfettario). Attualmente Jobby cerca soprattutto fattorini, promoter, dogsitter, camerieri e commessi. Come nella <i>food delivery</i>, anche qui il modello contrattuale preferito è la prestazione occasionale.
+        </p>
+  </div>
+              <div class="textopie">
+        <p>
+          Andrea Goggi è fondatore e CEO di Jobby.
+        </p>
+      </div>
+      <div class="textobloquevid">
+        <div class="embebido">
+          <iframe src="https://www.youtube.com/embed/xg5d69lnN-Y?rel=0&amp;showinfo=0;color=white" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div> 
+               <div class="textonormal"> 
+        <p>
+          Jobby si era presentata nel 2016 pubblicizzando un “compenso minimo orario di 8 euro o un minimo di 4 euro per incarico singolo (per esempio una consegna)” ma allo stato attuale <b>gran parte dei lavoretti che gestisce si aggirano intorno ai 5 euro all’ora</b>, anche se l’impresa sostiene di avere un limite maggiore.
+        </p>
+        <p>
+          Rispetto a quelle app di ciclofattorini che <a href="https://welcometoyourgig.com/essererider.html" target="_blank">mostrano al lavoratore importi guadagnati lordi o falsati</a>, Jobby comunica ai suoi worker i compensi netti. Per ogni gig effettuato, avvisano nel colloquio di selezione, viene però detratto un euro come contributo alla copertura assicurativa privata. Mentre al committente viene chiesta una commissione del 15% sull’importo dovuto al lavoratore.
+        </p>
+        <p>
+          «<b>Guardo l’annuncio, mi piace, controllo data, ora e luogo. Se è in linea con i miei impegni, mi candido e aspetto di essere selezionato</b>».
+        </p>
+        <p>
+          Agrippino, 31 anni, lavora a Milano come grafico per una rivista. Si è iscritto a Jobby da un paio di mesi durante i quali ha fatto di tutto: lavapiatti, promoter per un ristorante, montaggio mobili e attività di report. Dice di aver guadagnato mediamente 8 euro all’ora e parla soddisfatto di questa opportunità: «Un’app di questo genere potrebbe essere un’ottima soluzione per quelle persone che vogliono svolgere solo i lavori che preferiscono  e quando vogliono. E aiuterebbe anche i disoccupati».
+        </p>
+        <p>
+          Andrea Luna, diciannovenne studentessa di psicologia, è della stessa idea. Ha installato Jobby un anno fa alla ricerca di un lavoretto per pagarsi gli studi e acquisire nuove competenze. Nell’appartamento milanese in cui vive con la famiglia racconta la sua esperienza con una startup di vendita al dettaglio, fatta di prestazioni occasionali attraverso Jobby:
+        </p>
+        <p>
+          «<b>Ho lavorato per circa due mesi per la stessa impresa, ma in questo caso non ero io a decidere l’orario di lavoro</b>. Avevo una certa libertà per la pausa pranzo ma dovevo sempre considerare le ore di minore o maggior affluenza dei clienti, comunicandole ai miei superiori, che potevano chiedermi di ritardarla o anticiparla».
+        </p>
+        <p>
+          App come Jobby non sono utilizzate solo da studenti in cerca di lavoretti o persone che hanno necessità di arrotondare. Damiano ha 25 anni e da neolaureato magistrale cerca lavori saltuari mentre manda in giro curriculum e portfolio per un lavoro ‘più stabile’.
+        </p>
+        <p>
+          «Una piattaforma che ti paga a fine giornata è una buona cosa rispetto alle agenzie con cui i soldi, se va bene, ti arrivano dopo due mesi». Il problema però, secondo Damiano, risiede nell’uso che fanno le aziende di questo genere di app . «Sembra che le imprese trovino il campo adatto per pagare molto meno nascondendosi dietro ai termini "smart", "sharing economy" e "startup". E nonostante questo trovano sempre schiere di candidati. Il mio timore rispetto al futuro è che anche il resto delle aziende si adegui a questa uccisione del mercato».
+        </p>
+      </div>
+      </div>
+  </div>
+</div>
+      <div class="textonormal">
+        <h1 id="altra05obj">Un’opportunità da regolamentare</h1>
+        <p>
+          Lo dicono praticamente tutti: c’è bisogno di regolamentare i lavori della gig economy. Da una parte le startup e gli imprenditori che non vogliono vedere ‘ingessato’ nel vincolo di subordinazione un tipo di lavoro così flessibile e ‘fluido’. Dall’altro i lavoratori, che chiedono maggiori tutele e un inquadramento più chiaro rispetto alla ‘prestazione occasionale’ a cui molti sono attualmente sottoposti.
+        </p>
+              </div>
+        <div class="desplegableboton activar"><h2>Approfondisci</h2><img src="images/bajar.png"></div>
+      <div class="desplegabletexto">
+        <div class="textonormal">
+        <p>
+          Numerosi giuristi hanno evidenziato l’errore diffuso di affrontare un fenomeno nuovo come quello della gig economy con strumenti giuridici e politici passati. Così la pensa Pietro Ichino, <b>avvocato giuslavorista, ex senatore del Partito Democratico e di Scelta Civica, ideatore e primo firmatario del disegno di legge “<a href="http://www.senato.it/leg/17/BGT/Schede/Ddliter/48351.htm" target="_blank">Disposizioni in materia di lavoro autonomo mediante piattaforma digitale</a>” del 5 ottobre 2017</b>.
+        </p>
+            </div>
+      <div class="textonormalvid">
+        <div class="embebido">
+          <iframe src="https://www.youtube.com/embed/kMmICMSSDZc?rel=0&amp;showinfo=0;color=white" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+        <div class="textopie">
+        <p>
+          Pietro Ichino, avvocato giuslavorista ed ex senatore.
+        </p>
+      </div>
+      <div class="textonormal">
+        <p>
+          Secondo Ichino una possibile soluzione agli attuali problemi della gig economy potrebbe essere rappresentata dalla creazione delle cosiddette <i>umbrella companies</i>, imprese-ombrello che “offrono un contratto di lavoro, anche in forma subordinata, ai lavoratori autonomi interessati a una copertura previdenziale e all’esenzione dalle complicazioni amministrative per l’incasso dei compensi”. Oltre a questo, le umbrella company già attive in paesi europei come il Belgio offrono assistenza mutualistica attraverso fondi propri (per ovviare alla discontinuità di reddito e ai ritardi nei pagamenti) e svolgono funzione di rappresentanza collettiva. Qualcosa di simile in Italia si ritrova nelle attività di Doc Servizi e SMart che vengono approfondite <a href="https://welcometoyourgig.com/unaltragigeconomyepossibileancheinitalia.html">nel prossimo capitolo</a>.
+        </p>
+      </div>
+      </div>
+      <div class="textonormal" style="padding-top: 0px; padding-bottom: 0px;">
+        <h3 style="color: #444444; padding-top: 30px;">Vuoi saperne di più?</h3>
+      </div>
+
+    </article>
+    <section>
+      <div class="contmenuint">
+        <a href="essererider.html">
+          <div class="menuint" id="menuint1">
+            <h1 id="titularmenudesktop">Essere rider: chi sono i ciclofattorini, cosa fanno le loro aziende</h1>
+            <h1 id="titularmenumovil">Essere rider</h1>
+            <h2 id="titularmenudesktop">Uber e le sue sorelle. Un colosso della gig economy da 70 miliardi, tra società terze e migranti senza documenti / I pendolari della gig economy / I ciclofattorini di Milano - la newsapp</h2>
+            <h2 id="titularmenumovil">Chi sono i ciclofattorini, cosa fanno le loro aziende</h2>
+            <div class="botonmenuint">
+              Leggi
+            </div>
+          </div>
+        </a>
+        <a href="./ridergame/HTML/index.html">
+          <div class="menuint" id="menuint2">
+            <h1>Rider Game, la tua esperienza da ciclofattorino</h1>
+            <h2>Sperimenta cosa significa consegnare cibo a domicilio tra le vie di Milano</h2>
+            <div class="botonmenuint">
+              Gioca
+            </div>
+          </div>
+        </a>
+
+        <a href="unaltragigeconomyepossibileancheinitalia.html">
+          <div class="menuint" id="menuint4">
+            <h1>Le piattaforme cooperative</h1>
+            <h2>Una (piccola) soluzione a un grande problema</h2>
+            <div class="botonmenuint">
+              Leggi
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <p>Welcome to your gig è un’inchiesta di <b>Giovanni Sacchi</b> e <b>Lorenzo Pirovano</b>, realizzata grazie al <b><a href="http://www.premiorobertomorrione.it/" target="_blank">Premio Roberto Morrione</b></a>.</p>
+      <p><a href="mailto:autori@welcometoyourgig.com" target="_blank">autori@welcometoyourgig.com</a></p>
+      <div class="piecontenedorbotones">
+        <div class="piebotones">
+          <a href="metodologia.html">
+            <div class="pieboton">Metodologia</div>
+          </a>
+          <a href="credits.html">
+            <div class="pieboton">Credits</div>
+          </a>
+        </div>
+      </div>
+      <div class="pielicencia">
+        <small>&#9400; 2018 (<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>)</small>
+      </div>
+    </footer>
+      <script type="text/javascript">
+      function autoScrollTo(el) {
+        var top = ($("#" + el).offset().top) - 50;
+        $(".desplegableint").addClass("activar");
+        $("html, body").animate({ scrollTop: top }, 800);
+        $(".negro").css('display', 'none');
+        if ((window.innerWidth) > 640){
+          $(".ocultarnav").css('display', 'block');
+          $(".desplegableint").addClass(".activar");
+        } else if ((window.innerWidth) <= 640){
+          $(".ocultarnav").css('display', 'none');
+          $(".desplegableint").removeClass(".activar");
+        }
+      }
+      </script>
+  </body>
+</html>

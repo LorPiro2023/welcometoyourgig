@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Welcome To Your Gig - Rider Game</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  </head>
+  <body>
+    <div class="negro"></div>
+    <nav>
+      <button class="desplegableint activar">Menu</button>
+      <div class="nombreint">Rider Game</div>
+      <div class="ocultarnav">
+        <a href="index.html">
+          <div class="regresar">
+            <img src="images/logohome.png"></img>
+          <!--<p>Gig economy all'italiana</p>-->
+          </div>
+        </a>
+        <ul>
+
+        </ul>
+      </div>
+    </nav>
+
+    <article class="ridercont">
+      <iframe src="rider/HTML/index.html" frameborder="0"></iframe>
+    </article>
+
+    <section>
+      <div class="contmenuint">
+        <a href="percheunridergame.html">
+          <div class="menuint" id="menuint2">
+            <h1>Perché un rider game?</h1>
+            <h2>Il mezzo come parte del messaggio</h2>
+            <div class="botonmenuint">
+              Leggi
+            </div>
+          </div>     
+        </a>
+          </div> 
+        <a href="essererider.html">
+          <div class="menuint" id="menuint1">
+            <h1 id="titularmenudesktop">Essere rider: chi sono i ciclofattorini, cosa fanno le loro aziende</h1>
+            <h1 id="titularmenumovil">Essere rider</h1>
+            <h2 id="titularmenudesktop">Uber e le sue sorelle. Un colosso della gig economy da 70 miliardi, tra società terze e migranti senza documenti / I pendolari della gig economy / I ciclofattorini di Milano - la newsapp</h2>
+            <h2 id="titularmenumovil">Chi sono i ciclofattorini, cosa fanno le loro aziende</h2>
+            <div class="botonmenuint">
+              Leggi
+            </div>
+          </div>
+        </a>
+        <a href="gigeconomyallitaliana.html">
+          <div class="menuint" id="menuint3">
+            <h1>Gig economy all'italiana</h1>
+            <h2>Come cambia il lavoro tra reviews, algoritmi e tariffe delle piattaforme</h2>
+            <div class="botonmenuint">
+              Leggi
+            </div>
+          </div>
+        </a>
+        <a href="unaltragigeconomyepossibileancheinitalia.html">
+          <div class="menuint" id="menuint4">
+            <h1>Le piattaforme cooperative</h1>
+            <h2>Una (piccola) soluzione a un grande problema</h2>
+            <div class="botonmenuint">
+              Leggi
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <p>Welcome to your gig è un’inchiesta di <b>Giovanni Sacchi</b> e <b>Lorenzo Pirovano</b>, realizzata grazie al <b><a href="http://www.premiorobertomorrione.it/" target="_blank">Premio Roberto Morrione</b></a>.</p>
+      <p><a href="mailto:autori@welcometoyourgig.com" target="_blank">autori@welcometoyourgig.com</a></p>
+      <div class="piecontenedorbotones">
+        <div class="piebotones">
+          <a href="metodologia.html">
+            <div class="pieboton">Metodologia</div>
+          </a>
+          <a href="credits.html">
+            <div class="pieboton">Credits</div>
+          </a>
+        </div>
+      </div>
+      <div class="pielicencia">
+        <small>&#9400; 2018 (<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>)</small>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    function autoScrollTo(el) {
+      var top = ($("#" + el).offset().top) - 50;
+      $(".desplegableint").addClass("activar");
+      $("html, body").animate({ scrollTop: top }, 800);
+      $(".negro").css('display', 'none');
+      if ((window.innerWidth) > 640){
+        $(".ocultarnav").css('display', 'block');
+        $(".desplegableint").addClass(".activar");
+      } else if ((window.innerWidth) <= 640){
+        $(".ocultarnav").css('display', 'none');
+        $(".desplegableint").removeClass(".activar");
+      }
+    }
+    </script>
+  </body>
+</html>
