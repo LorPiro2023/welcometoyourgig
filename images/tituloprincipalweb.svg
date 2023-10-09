@@ -1,0 +1,48 @@
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 532.7 253.3" style="enable-background:new 0 0 532.7 253.3;" xml:space="preserve">
+	 <defs>
+	 	<style type="text/css">
+	 		.st0{
+	 		fill: #5c95d6;
+	 		fill-opacity: 0;
+	 		stroke:#4C7CB3;
+	 		stroke-width:4;
+	 		stroke-miterlimit:10;
+	 		stroke-dasharray: 800;
+	 		stroke-dashoffset: 0;
+	 		-webkit-animation: dash 5s linear forwards;
+	 		-o-animation: dash 5s linear forwards;
+	 		-moz-animation: dash 5s linear forwards;
+	 		animation: dash 5s linear forwards;
+	 		}
+
+	 			@-webkit-keyframes dash{
+	 	        0%  {stroke-dashoffset:800;}
+	 			   80%  {stroke-dashoffset:0;fill-opacity:0;}
+	 	        100%{stroke-dashoffset:0;fill-opacity:1;}
+	 	    }
+	 	    @-moz-keyframes dash{
+	 	        0%  {stroke-dashoffset:800;}
+	 			   80%  {stroke-dashoffset:0;fill-opacity:0;}
+	 	        100%{stroke-dashoffset:0;fill-opacity:1;}
+	 	    }
+	 	</style>
+	 </defs>
+<path id="XMLID_30_" class="st0" d="M19.5,116.6 M109.8,116.6 M19.5,116.6V3.9h23v89.6h10.6V3.9h23v89.6h10.6V3.9h23v112.8H19.5z"/>
+<path id="XMLID_40_" class="st0" d="M210.6,116.6h-23V3.9h23V116.6z"/>
+<path id="XMLID_55_" class="st0" d="M445.9,116.4l-23,0.2V60.5h-10.6v56.1h-23V60.5h-10.6v56.1h-23V37.5h90.3V116.4z"/>
+<path id="XMLID_64_" class="st0" d="M56,219.1H37.5V147h-18v-18.5H74V147H56V219.1z"/>
+<path id="XMLID_73_" class="st0" d="M189.5,219.1H171V183h-18v-54.5h18.5v36H189v-36h18.5V183h-18V219.1z"/>
+<path id="XMLID_82_" class="st0" d="M270,219.1 M315.5,219.1 M270,219.1v-63.6h18.5v45h8.5v-45h18.5v63.6H270z"/>
+<path id="XMLID_86_" class="st0" d="M342.5,219.1H324v-63.6h36.5V174h-18V219.1z"/>
+<path id="XMLID_93_" class="st0" d="M459,147h-18.5v-18.5H459V147z M459,219.1h-18.5v-63.6H459V219.1z"/>
+<path id="XMLID_32_" class="st0" d="M143.4,60.6v10.6H154V60.6H143.4z M120.4,36.6H177V82h-33.6v10.6H177v23.1h-56.6V36.6z"/>
+<path id="XMLID_10_" class="st0" d="M278.3,69.7h-23V58.6h-10.6v33h10.6V80.3h23v35.4h-56.6V36.6h56.6V69.7z"/>
+<path id="XMLID_14_" class="st0" d="M345.8,116.6h-56.6V37.5h56.6V116.6z M322.8,60.5h-10.6v33h10.6V60.5z"/>
+<path id="XMLID_15_" class="st0" d="M479.5,61.5v10.6h10.6V61.5H479.5z M456.5,37.5h56.6v45.4h-33.6v10.6h33.6v23.1h-56.6V37.5z"/>
+<path id="XMLID_4_" class="st0" d="M125.4,219.1H82v-60.6h43.4V219.1z M107.8,176.1h-8.1v25.3h8.1V176.1z"/>
+<path id="XMLID_7_" class="st0" d="M260.9,219.1h-43.4v-60.6h43.4V219.1z M243.2,176.1h-8.1v25.3h8.1V176.1z"/>
+<path id="XMLID_26_" class="st0" d="M433.1,219.2l-55.7,0.1v-90.6H432v18.5h-36v53.5h17.5v-17.5h-8.7v-18.5l28.4,0V219.2z"/>
+<path id="XMLID_34_" class="st0" d="M467.6,155.5h45.5v90.6h-45.5v-18.2h27v-8.5h-27V155.5z M494.6,174h-8.5v26.5h8.5V174z"/>
+
+</svg>
