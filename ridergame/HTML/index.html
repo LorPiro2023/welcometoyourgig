@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The rider game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/ico.png" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="stylesheet" href="css/2BE_fusioned.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    <div class="main fadein">
+        <div class="p1">
+            <div class="p1_content">
+                <div id="volume">
+                    <object type="image/svg+xml" data="svg/sound.svg" class="ico"></object>
+                    <p>- attiva l’audio per un’esperienza completa - </p>
+                </div> 
+                <div class="p1_logo"><img src="svg/logo.svg"></div>
+                <p>Questo gioco è basato sulle testimonianze di 200 ciclofattorini delle piattaforme digitali attivi nella città di Milano, intervistati mentre lavoravano. Stai per calarti nella loro realtà e nel loro lavoro per un mese. Sei pronto a diventare uno di loro?</p>
+                <button class="p1_button" id="p1_button">INIZIA</button>
+            </div>
+        </div>
+        <div class="p2">
+            <div class="p2_content">
+                <h4>Che esperienza<br>vuoi vivere?</h4>
+                <div id="slider" class="slider">
+                    <div class="items">
+                        <div class="item">
+                            <img class="avatar" src="img/avatar01.png">
+                            <p>
+                                26 anni, vivi a Milano, vuoi fare il ciclofattorino perchè sei disoccupato e hai bisogno di un lavoro per mantenerti. Non avendo un lavoro hai disponibilità oraria totale
+                            </p>
+                            <button class="p2_button" id="app01">SCEGLI</button>
+                        </div>
+                        <div class="item">
+                            <img class="avatar" src="img/avatar02.png">
+                            <p>
+                                Hai 48 anni, vivi a Milano, hai un figlio di 9 anni, vuoi fare il ciclofattorino per aggiungere qualcosa a quello che guadagni dal tuo lavoro part- time. Hai disponibilità oraria limitata, mezza giornata infrasettimanale al pomeriggio e i weekend
+                            </p>
+                            <button class="p2_button" id="app02">SCEGLI</button>
+                        </div>
+                        <div class="item">
+                            <img class="avatar" src="img/avatar03.png">
+                            <p>
+                                20 anni, vivi a Milano da due anni, da quando cioè ti sei trasferita, studi all'università, vuoi fare la ciclofattorina per guadagnare qualcosa mantenendo orari flessibili. Hai lezione quattro giorni a settimana
+                            </p>
+                            <button class="p2_button" id="app03">SCEGLI</button>
+                        </div>
+                        <div class="item">
+                            <img class="avatar" src="img/avatar04.png">
+                            <p>
+                                30 anni, nigeriano, da un anno vivi in provincia di Pavia in una casa d'accoglienza, vuoi fare il ciclofattorino perchè é l'unico lavoro che hai trovato. Hai disponibilità oraria completa ma un treno da prendere
+                            </p>
+                            <button class="p2_button" id="app04">SCEGLI</button>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <ul>
+                            <li class="forward">
+                                <div></div>
+                            </li>
+                            <li class="backward">
+                                <div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="tabs">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="p3">
+            <div class="p3_content">
+                <p class="s3_0">
+                    Un amico suggerisce di candidarti all'app per cui lavora. Tutto ciò che ti serve sono uno smartphone e una bicicletta. Riempi velocemente un formulario online e invii la candidatura
+                </p>
+                <button class="p3_start" id="pre_start">PROSEGUI</button>
+
+                <button class="p3_buttons nascosto" id="start">VAI AL COLLOQUIO</button>
+
+                <!--APP CONTENT HERE-->
+                <div class="wrapper motion_p3 nascosto">
+                    <video preload="auto" src="video/motion2.mp4" id="video_p3"></video>
+                    <button class="skip_video" id="skip">SALTA</button>
+                </div>
+                <p class="nascosto after_motion_p3">
+                    Ricevi le credenziali per la app, lo zaino termico, una power-bank e un impermeabile.<br>Vieni informato che per l'attrezzatura ti verranno scalati 65 euro dal primo stipendio, 50 dei quali ti verranno resi quando smetterai di lavorare e restituirai il materiale.
+                </p>
+                <button class="nascosto p3_btn" id="continue_01">SCEGLI QUANDO LAVORARE</button>
+                <p class="nascosto after_motion_p4">
+                    Ogni settimana dovrai scegliere i giorni e le ore in cui sarai disponibile a lavorare. 
+È la tua prima settimana e il tuo punteggio ti permette di accedere al calendario settimanale solo quando la maggior parte delle ore sono già prenotate.
+                </p>
+                <button class="nascosto p3_btn open_modal" id="continue_02">PRENOTA TUTTE LE ORE DISPONIBILI</button>
+
+                <button class="nascosto p3_btn open_modal" id="continue_02A">PRENOTA LE ORE DISPONIBILI AL POMERIGGIO E SERA</button>
+                <button class="nascosto p3_btn open_modal" id="continue_02B">PRENOTA SOLO LE ORE DISPONIBILI NEL FINE SETTIMANA</button>
+                <button class="nascosto p3_btn open_modal" id="continue_02C">PRENOTA LE ORE DISPONIBILI ALLA SERA</button>
+                <p class="nascosto after_motion_p5">
+                    Un collega ti consiglia di munirti di qualche accessorio che potrebbe tornarti utile. Cosa scegli?
+                </p>
+                <form id="form_01" class="nascosto p3_buttons">
+                    
+                    <label for="clearOptions_3">
+                        <span class="txt">Piano internet per il telefono (6 &euro;)</span>
+                        <input type="checkbox" name="option1" value="N1" id="clearOptions_3" class="ckstyle addOptions_1">
+                        <span class="checkmark"></span>
+                    </label><br>
+                    
+                    <label for="clearOptions_2">
+                        <span class="txt">Assicurazione accessoria (20 &euro;)</span>
+                        <input type="checkbox" name="option2" value="N2" id="clearOptions_2" class="ckstyle addOptions_1">
+                        <span class="checkmark"></span>
+                    </label><br>
+                    
+                    <label for="clearOptions_1">
+                        <span class="txt">Niente di tutto ciò</span>
+                        <input type="checkbox" name="option3" value="N3" id="clearOptions_1" class="ckstyle">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
+                <button disabled class="nascosto p3_btn" id="continue_03">Seconda settimana</button>
+                <p class="nascosto after_motion_p6">
+                    La quantità di ore disponibili aumenta e forse sarà una settimana fortunata!
+                </p>
+                <div class="nascosto options after_motion_p6">
+                    <button class="nascosto p3_buttons setbtn1" id="opA">Prenota ore solo durante la settimana</button>
+                </div>
+                <div class="nascosto options after_motion_p6">
+                    <button class="nascosto p3_buttons setbtn1" id="opB">Prenota ore solo nel fine settimana</button>
+                </div>
+                <div class="nascosto options after_motion_p6">
+                    <button class="nascosto p3_buttons setbtn1" id="opC">Prenota tutte le ore disponibili</button>
+                </div>
+                <p class="nascosto after_motion_p7">!</p>
+                <button class="nascosto p3_btn" id="summary_1">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="summary_2">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="summary_3">PROSEGUI</button>
+
+                <p class="nascosto after_motion_p8">
+                    Si avvicina il 2 giugno, Festa della Repubblica. Le consegne ti aspettano, connettiti e guadagna il 20% in piú per ogni consegna!
+                </p>
+                <button class="nascosto p3_buttons" id="continue_05">LAVORI IL 2 GIUGNO</button>
+                <button class="nascosto p3_buttons" id="continue_06">È FESTA, TI RIPOSI</button>
+                <p class="nascosto after_motion_p9 note">
+                    <strong>ATTENZIONE!</strong><br>
+                    <span></span>
+                </p>
+                <p class="nascosto after_motion_p9 target">!</p>
+                <button class="nascosto p3_btn" id="divergency_0">PROSEGUI</button>
+
+                <button class="nascosto p3_btn" id="continue_07">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="continue_08">PROSEGUI</button>
+
+                <button class="nascosto p3_btn" id="continue_09">Quarta settimana</button>
+                <button class="nascosto p3_btn" id="divergency_1">PROSEGUI</button>
+                <div class="nascosto options newApp_p1 O1">
+                    <button class="nascosto p3_buttons setbtn1" id="opA_N">Accetti e inizi a lavorare con entrambe le app</button>
+                </div>
+                <div class="nascosto options newApp_p1 O2">
+                    <button class="nascosto p3_buttons setbtn1" id="opB_N">Abbandoni l'app attuale e inizi a lavorare con quella nuova</button>
+                </div>
+                <div class="nascosto options newApp_p1 O3">
+                    <button class="nascosto p3_buttons setbtn1" id="opC_N">Rifiuti e continui a lavorare per l'app attuale</button>
+                </div>
+
+                <button class="nascosto p3_btn" id="summary_4">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="summary_5">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="summary_6">PROSEGUI</button>
+
+
+                <button class="nascosto p3_btn" id="divergency_2">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="divergency_3">PROSEGUI</button>
+                <button class="nascosto p3_btn" id="divergency_4">PROSEGUI</button>
+
+                <div class="nascosto newApp_p2 opD_N">
+                    <p>Per la tua prestazione occasionale ti viene applicata la ritenuta d'acconto del 20%</p>
+                    <button class="nascosto p3_buttons setbtn1" id="opD_N">PROSEGUI</button>
+                </div>
+                <p class="nascosto newApp_p4">
+                    <strong>Vuoi riprovare con un altro profilo?</strong>
+                </p>
+                <button class="nascosto p3_btn" id="continue_11">RINIZIA</button>
+            </div>
+            <div id="mask"></div>
+            <div class="background"></div>
+        </div>
+        <div class="counters">
+            <ul>
+                <li class="time"><span class="hour" id="hour">0</span></li>
+                <li class="money" id="money">0</li>
+            </ul>
+        </div>
+        <a href="index.html"><div class="reload" id="reload">Ricomincia</div></a>
+        <div class="shadow"></div>
+    </div>
+    <div class="main-popup">
+        <div id="popup" class="modal">
+            <div class="modal-content">
+                <img class="avatar a1" src="img/avatar01.png" width="150px">
+                <img class="avatar a2" src="img/avatar02.png" width="150px">
+                <img class="avatar a3" src="img/avatar03.png" width="150px">
+                <img class="avatar a4" src="img/avatar04.png" width="150px">
+
+                <p>Riassunto della settimana</p>
+                <ul id="results">
+                   <li class="text">Hai lavorato </li>
+                    <li class="time"><span class="hour" id="hourB">00</span></li>
+                    <li class="text"><br>Hai guadagnato</li>
+                    <li class="money" id="moneyB">0</li>
+                </ul>
+                <span class="close">PROSEGUI</span>
+            </div>
+        </div>
+    </div>
+    <div class="dialogue">
+        <div id="mynotify" class="notify">
+            <div class="notify-content">
+                <span class="close_two">&times;</span>
+                <div class="notify_bg"></div>
+                <div class="icon"></div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div id="working">
+        <object type="image/svg+xml" data="svg/bike_working.svg" class="bike_w"></object>
+    </div>    
+    <div id="audio">
+        <audio preload="auto" id="notification"><source src="audio/pop.mp3" type="audio/mpeg"><source src="audio/pop.ogg" type="audio/ogg"></audio><audio preload="auto" id="kching"><source src="audio/k-ching.mp3" type="audio/mpeg"><source src="audio/k-ching.ogg" type="audio/ogg"></audio>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/j.tools.min.js"></script>
+    <script src="js/apps/profile_01.js"></script>
+    <script src="js/apps/profile_02.js"></script>
+    <script src="js/apps/profile_03.js"></script>
+    <script src="js/apps/profile_04.js"></script>
+    <script src="js/plugins.js"></script>
+</body>
+
+</html>
